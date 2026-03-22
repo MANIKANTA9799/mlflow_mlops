@@ -28,7 +28,7 @@ n_estimators = 5
 mlflow.autolog()
 # it is basically the one that understnads shit that needed to be logged in an ml file and automatically logs it 
 # if we need fike contents or tags mention that sepsetaterly 
-mlflow.set_experiment("MLOPS-2")
+mlflow.set_experiment("MLOPS-autolog")
 
 with mlflow.start_run():
     rf = RandomForestClassifier(max_depth=max_depth, n_estimators=n_estimators, random_state=42)
