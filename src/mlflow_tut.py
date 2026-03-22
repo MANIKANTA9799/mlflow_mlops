@@ -48,10 +48,6 @@ with mlflow.start_run():
     # save plot
     plt.savefig("Confusion-matrix.png")
 
-
-    # tags
-    mlflow.set_tags({"Author": 'Vikash', "Project": "Wine Classification"})
-
     # Log the model
     mlflow.sklearn.log_model(rf, "Random-Forest-Model")#type:ignore 
 

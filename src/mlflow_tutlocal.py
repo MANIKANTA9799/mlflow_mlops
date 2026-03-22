@@ -50,8 +50,7 @@ with mlflow.start_run():
     mlflow.log_artifact("Confusion-matrix.png")
     mlflow.log_artifact(__file__)
 
-    # tags
-    mlflow.set_tags({"Author": 'Vikash', "Project": "Wine Classification"})
+
 
     # Log the model
     mlflow.sklearn.log_model(rf, "Random-Forest-Model")#type:ignore
